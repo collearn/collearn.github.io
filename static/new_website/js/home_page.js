@@ -131,11 +131,11 @@ $(document).ready(function () {
         var visible = false;
         $(document).scroll(function () {
             var y = $(this).scrollTop();
-            console.log(y,.8*win_h);
-            if ((y > .8 * win_h) & !visible) {
+            console.log(y,.3*win_h);
+            if ((y > .3 * win_h) & !visible) {
                 visible = true;
                 $('.header').animate({ 'opacity': 1 }, 'fast');
-            } else if ((y <= .8 * win_h) & visible) {
+            } else if ((y <= .3 * win_h) & visible) {
                 visible = false;
                 $('.header').animate({ 'opacity': 0 }, 'fast');
             }

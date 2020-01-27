@@ -725,7 +725,10 @@ ul {
     color: #ffff;
     letter-spacing: 1.5px !important;
     font-size: 16px;
+    
 }
+
+
 
 .textwidget {
     color: #ffff;
@@ -757,6 +760,11 @@ ul.social-icons i {
     width: 34px;
     height: 34px;
 }
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
 
 .fa {
     font: normal normal normal 14px/1 FontAwesome;
@@ -780,6 +788,10 @@ ul.social-icons i {
     background-color: #322f30;
 }
 
+.fa-facebook:hover {
+    color: red;
+}
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -789,6 +801,45 @@ ul.social-icons i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-twitter {
+    padding: 10px 12px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-linkedin {
+    padding: 10px 12px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-instagram {
+    padding: 10px 12px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+
+i::before {
+    color: white;
+    box-sizing: border-box;
+    
+  }
 
 .standards {
     padding-top: 10px;

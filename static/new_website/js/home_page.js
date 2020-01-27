@@ -147,53 +147,53 @@ $(document).ready(function () {
         location = $('#user_location').html(),
         source = $("#utm_source").html();
 
-    $("#contact_us_form").on("submit", function (e) {
-        e.preventDefault();
-        $('#loader_modal').modal('show');
-        if ($('#select-ac_market').is(':checked')) {
-            location = 'Theatre Road'
-        }
-        if ($('#select-salt_lake').is(':checked')) {
-            location = 'Salt Lake'
-        }
-        $(this).children('.location').val(location);
+    // $("#contact_us_form").on("submit", function (e) {
+    //     e.preventDefault();
+    //     $('#loader_modal').modal('show');
+    //     if ($('#select-ac_market').is(':checked')) {
+    //         location = 'Theatre Road'
+    //     }
+    //     if ($('#select-salt_lake').is(':checked')) {
+    //         location = 'Salt Lake'
+    //     }
+    //     $(this).children('.location').val(location);
 
-        $.ajax({
-            type: $(this).attr('method'),
-            url: $(this).attr('action'),
-            data: $(this).serialize(),
-            dataType: 'json',
-            success: function (data) {
-                setTimeout(function () {
-                    $('#loader_modal').modal('hide');
-                    Swal.fire({
-                        type: 'success',
-                        title: 'Thank You!',
-                        html: '<br>' + data.body +
-                            '<br><br><br><div>Location: <a href="' + data.loc_link +
-                            '">' +
-                            data.location + '</a><br><br><a href="tel:9073223854"><i class="fa fa-phone w3-margin-right"></i>9073223854</a></div><br>',
-                        confirmButtonColor: '#4DB6AC',
-                        width: Math.min(win_w, 500).toString() + 'px',
-                        padding: '3em',
-                        confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!'
-                    });
-                }, 500);
-                gtag('config', 'UA-124077418-1', { 'page_path': '/thank_you' });
-                fbq('track', 'CompleteRegistration');
-            },
-            error: function (data) {
-                setTimeout(function () {
-                    $('#loader_modal').modal('hide');
-                    Swal.fire({
-                        type: 'error',
-                        html: 'Error signing up',
-                    })
-                }, 500);
-            }
-        });
-        return false;
-    });
+    //     $.ajax({
+    //         type: $(this).attr('method'),
+    //         url: $(this).attr('action'),
+    //         data: $(this).serialize(),
+    //         dataType: 'json',
+    //         success: function (data) {
+    //             setTimeout(function () {
+    //                 $('#loader_modal').modal('hide');
+    //                 Swal.fire({
+    //                     type: 'success',
+    //                     title: 'Thank You!',
+    //                     html: '<br>' + data.body +
+    //                         '<br><br><br><div>Location: <a href="' + data.loc_link +
+    //                         '">' +
+    //                         data.location + '</a><br><br><a href="tel:9073223854"><i class="fa fa-phone w3-margin-right"></i>9073223854</a></div><br>',
+    //                     confirmButtonColor: '#4DB6AC',
+    //                     width: Math.min(win_w, 500).toString() + 'px',
+    //                     padding: '3em',
+    //                     confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!'
+    //                 });
+    //             }, 500);
+    //             gtag('config', 'UA-124077418-1', { 'page_path': '/thank_you' });
+    //             fbq('track', 'CompleteRegistration');
+    //         },
+    //         error: function (data) {
+    //             setTimeout(function () {
+    //                 $('#loader_modal').modal('hide');
+    //                 Swal.fire({
+    //                     type: 'error',
+    //                     html: 'Error signing up',
+    //                 })
+    //             }, 500);
+    //         }
+    //     });
+    //     return false;
+    // });
     $("#school").autocomplete({
         source: "/school_name/",
         minLength: 0,

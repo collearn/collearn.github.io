@@ -13,13 +13,15 @@
 }
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     letter-spacing: .5px;
     -webkit-overflow-scrolling: touch;
-    font-size: var(--font_size);
+    /* font-size: var(--font_size); */
     color: rgba(64, 64, 64, .9);
 }
 
@@ -27,6 +29,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    
 }
 
 /* .hidden {
@@ -143,9 +146,7 @@ body {
 }
 
 .logo-img {
-    width: 10vw;
-    height: 10vh;
-    margin-left: 1em;
+    
 }
 
 .menu-bar {
@@ -2547,7 +2548,8 @@ input[type=checkbox]:checked+.check-box::before,
     }
 
     .text-test-content {
-        margin-top: 5vh;
+        /* margin-top: 5vh; */
+        color: black;
     }
 
     .downloads-section {

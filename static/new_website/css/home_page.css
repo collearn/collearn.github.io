@@ -2659,13 +2659,37 @@ input[type=checkbox]:checked+.check-box::before,
         background-color: #f7f7f7;
     }
  
-    @media screen and (max-width:991px) {
+    @media screen and (min-width:700px ) and (max-width:991px) {
     .teachers-space {
         /* padding: 0rem 0rem 5rem 6rem; */
         width: 50vw;
         height: 50vh;
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
+       
+
+    }
+}
+
+@media screen and (min-width:500px ) and (max-width:700px) {
+    .teachers-space {
+        /* padding: 0rem 0rem 5rem 6rem; */
+        width: 60vw;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+       
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .teachers-space {
+        /* padding: 0rem 0rem 5rem 6rem; */
+        width: 70vw;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
        
 
     }
@@ -2747,6 +2771,7 @@ input[type=checkbox]:checked+.check-box::before,
         text-align: center;
         background-color: #34bcd0;
         line-height: 18px;
+        overflow: auto;
     }
 
     .back p {

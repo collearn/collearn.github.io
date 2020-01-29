@@ -2609,7 +2609,7 @@ input[type=checkbox]:checked+.check-box::before,
     }
 
     .explore-container {
-        padding: 8vh 5vw 5vw 8vh;
+        padding: 8vh 5vw 8vw 5vh;
         background-color: #f7f7f7;
     border-bottom: 1px solid #eaeaea;
     }
@@ -2655,13 +2655,17 @@ input[type=checkbox]:checked+.check-box::before,
     }
 
     .teachers-container {
-        padding: 1vh 0vw 4vh 4.5vw;
+        /* padding: 1vh 0vw 4vh 4.5vw; */
         background-color: #f7f7f7;
     }
  
     @media screen and (max-width:991px) {
     .teachers-space {
-        padding: 0rem 0rem 5rem 6rem;
+        /* padding: 0rem 0rem 5rem 6rem; */
+        width: 50vw;
+        height: 50vh;
+        margin-left: auto;
+    margin-right: auto;
        
 
     }
@@ -2674,7 +2678,12 @@ input[type=checkbox]:checked+.check-box::before,
             /* width: 50vw;
             height: 50vh; */
             padding-bottom: 5rem;
+            padding: 1vh 0vw 4vh 7vw;
         }
+    }
+
+    .img-responsive {
+        margin: 0 auto;
     }
 
     .card-container {
@@ -2690,7 +2699,7 @@ input[type=checkbox]:checked+.check-box::before,
 
     .f1_card {
         float: left;
-        width: 84%;
+        /* width: 84%; */
         height: auto;
         -webkit-perspective: 1000;
         -moz-perspective: 1000;
@@ -2716,7 +2725,8 @@ input[type=checkbox]:checked+.check-box::before,
 
     .hj img {
         float: left;
-        width: 100%;
+        height: 30rem;
+        width: 30rem;
         margin-top: 35px;
     }
 
@@ -2736,12 +2746,13 @@ input[type=checkbox]:checked+.check-box::before,
         color: white;
         text-align: center;
         background-color: #34bcd0;
+        line-height: 18px;
     }
 
     .back p {
-        font-family: 'texgyreheros-regular';
+        /* font-family: 'texgyreheros-regular'; */
         font-size: 13px;
-        line-height: 22px;
+        line-height: 16px;
         text-align: left;
     }
 
@@ -2863,7 +2874,7 @@ input[type=checkbox]:checked+.check-box::before,
         }
         .text1 {
             height: 120px;
-            overflow: scroll;
+            /* overflow: scroll; */
         }
     }
 

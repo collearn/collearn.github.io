@@ -2655,13 +2655,15 @@ input[type=checkbox]:checked+.check-box::before,
     }
 
     .teachers-container {
-        /* padding: 1vh 0vw 4vh 4.5vw; */
+        padding: 1vh 0vw 4vh 4.5vw;
         background-color: #f7f7f7;
     }
  
     @media screen and (max-width:991px) {
     .teachers-space {
         padding: 0rem 0rem 5rem 6rem;
+       
+
     }
 }
 
@@ -2669,8 +2671,8 @@ input[type=checkbox]:checked+.check-box::before,
         .teachers-space {
             margin-left: auto;
             margin-right: auto;
-            width: 50vw;
-            height: 50vh;
+            /* width: 50vw;
+            height: 50vh; */
             padding-bottom: 5rem;
         }
     }
@@ -3673,7 +3675,7 @@ h1.section_title {
     }
 
     .logo-img {
-        width: 45vw;
+        /* width: 45vw; */
         min-height: 50px;
         height: var(--spacer);
         margin: 0 auto;

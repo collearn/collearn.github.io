@@ -2609,7 +2609,7 @@ input[type=checkbox]:checked+.check-box::before,
     }
 
     .explore-container {
-        padding: 8vh 5vw 8vw 5vh;
+        padding: 8vh 5vw 8vh 5vw;
         background-color: #f7f7f7;
     border-bottom: 1px solid #eaeaea;
     }
@@ -3016,13 +3016,35 @@ input[type=checkbox]:checked+.check-box::before,
     position: relative;
     width: 100%;
   }
-  
+  @media screen and (min-width: 700px) {
   .slide {
     display: none;
     height: 100%;
     /* position: absolute; */
     width: 100%;
   }
+}
+
+  @media screen and (max-width: 700px) {
+      .slide {
+        display: none;
+        height: 100%;
+        /* position: absolute; */
+        width: auto;
+      }
+
+  }
+
+  /* @media screen and (min-width: 700px) { */
+    .map-img {
+      /* display: none; */
+      height: 100%;
+      /* position: absolute; */
+      width: 100%;
+    }
+  /* } */
+  
+   
   
   .slide:first-child {
     display: block;
